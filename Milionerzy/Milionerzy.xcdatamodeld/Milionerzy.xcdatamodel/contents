@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17B1003" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Answer" representedClassName="Answer" syncable="YES" codeGenerationType="class">
+        <attribute name="content" attributeType="String" syncable="YES"/>
+        <attribute name="correct" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="parentQuestion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Question" inverseName="answers" inverseEntity="Question" syncable="YES"/>
+    </entity>
+    <entity name="Question" representedClassName=".Question" syncable="YES" codeGenerationType="class">
+        <attribute name="content" attributeType="String" syncable="YES"/>
+        <relationship name="answers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Answer" inverseName="parentQuestion" inverseEntity="Answer" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Answer" positionX="-4061" positionY="-5823" width="128" height="88"/>
+        <element name="Question" positionX="-4257" positionY="-5823" width="128" height="73"/>
+    </elements>
 </model>

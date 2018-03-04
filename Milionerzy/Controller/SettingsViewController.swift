@@ -1,18 +1,19 @@
 //
-//  ViewController.swift
+//  SettingsViewController.swift
 //  Milionerzy
 //
-//  Created by Kamil Chmiel on 28.02.2018.
+//  Created by Kamil Chmiel on 01.03.2018.
 //  Copyright © 2018 Kamil Chmiel. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +21,4 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
 }
-

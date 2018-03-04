@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E034E3620473EA9004FBD5F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E034E3520473EA9004FBD5F /* Question.swift */; };
+		8E034E3C20474B45004FBD5F /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E034E3A20474B45004FBD5F /* QuestionCell.swift */; };
+		8E034E3D20474B45004FBD5F /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E034E3B20474B45004FBD5F /* QuestionCell.xib */; };
+		8E034E3F20480539004FBD5F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E034E3E20480539004FBD5F /* MenuViewController.swift */; };
+		8E034E4120480AF6004FBD5F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E034E4020480AF6004FBD5F /* SettingsViewController.swift */; };
 		8E5EB1AA20470FD8002EFA44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5EB1A920470FD8002EFA44 /* AppDelegate.swift */; };
-		8E5EB1AC20470FD8002EFA44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5EB1AB20470FD8002EFA44 /* ViewController.swift */; };
+		8E5EB1AC20470FD8002EFA44 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5EB1AB20470FD8002EFA44 /* GameViewController.swift */; };
 		8E5EB1AF20470FD8002EFA44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E5EB1AD20470FD8002EFA44 /* Main.storyboard */; };
-		8E5EB1B220470FD8002EFA44 /* Milionerzy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E5EB1B020470FD8002EFA44 /* Milionerzy.xcdatamodeld */; };
 		8E5EB1B420470FD8002EFA44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E5EB1B320470FD8002EFA44 /* Assets.xcassets */; };
 		8E5EB1B720470FD8002EFA44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E5EB1B520470FD8002EFA44 /* LaunchScreen.storyboard */; };
+		B07F603F4031422C3B5DA50A /* Pods_Milionerzy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA5A8D38BDA448A695CC883 /* Pods_Milionerzy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01F3A955F14F4CA644D73B79 /* Pods-Milionerzy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Milionerzy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Milionerzy/Pods-Milionerzy.debug.xcconfig"; sourceTree = "<group>"; };
+		0EA5A8D38BDA448A695CC883 /* Pods_Milionerzy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Milionerzy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E034E3520473EA9004FBD5F /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		8E034E3A20474B45004FBD5F /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
+		8E034E3B20474B45004FBD5F /* QuestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCell.xib; sourceTree = "<group>"; };
+		8E034E3E20480539004FBD5F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8E034E4020480AF6004FBD5F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		8E5EB1A620470FD8002EFA44 /* Milionerzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Milionerzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E5EB1A920470FD8002EFA44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E5EB1AB20470FD8002EFA44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E5EB1AB20470FD8002EFA44 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		8E5EB1AE20470FD8002EFA44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		8E5EB1B120470FD8002EFA44 /* Milionerzy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Milionerzy.xcdatamodel; sourceTree = "<group>"; };
 		8E5EB1B320470FD8002EFA44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E5EB1B620470FD8002EFA44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E5EB1B820470FD8002EFA44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B425BD53A276A948AE5DD6BD /* Pods-Milionerzy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Milionerzy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Milionerzy/Pods-Milionerzy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,46 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B07F603F4031422C3B5DA50A /* Pods_Milionerzy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D12FFC58BA17C53FE89874E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EA5A8D38BDA448A695CC883 /* Pods_Milionerzy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3271DA2DE868F22F4779194B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01F3A955F14F4CA644D73B79 /* Pods-Milionerzy.debug.xcconfig */,
+				B425BD53A276A948AE5DD6BD /* Pods-Milionerzy.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8E034E3920474B13004FBD5F /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8E034E3A20474B45004FBD5F /* QuestionCell.swift */,
+				8E034E3B20474B45004FBD5F /* QuestionCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
 		8E5EB19D20470FD8002EFA44 = {
 			isa = PBXGroup;
 			children = (
 				8E5EB1A820470FD8002EFA44 /* Milionerzy */,
 				8E5EB1A720470FD8002EFA44 /* Products */,
+				3271DA2DE868F22F4779194B /* Pods */,
+				1D12FFC58BA17C53FE89874E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +98,41 @@
 			isa = PBXGroup;
 			children = (
 				8E5EB1A920470FD8002EFA44 /* AppDelegate.swift */,
-				8E5EB1AB20470FD8002EFA44 /* ViewController.swift */,
-				8E5EB1AD20470FD8002EFA44 /* Main.storyboard */,
+				8E5EB1C020471007002EFA44 /* Model */,
+				8E5EB1BF20470FF6002EFA44 /* View */,
+				8E5EB1BE20470FE7002EFA44 /* Controller */,
 				8E5EB1B320470FD8002EFA44 /* Assets.xcassets */,
 				8E5EB1B520470FD8002EFA44 /* LaunchScreen.storyboard */,
 				8E5EB1B820470FD8002EFA44 /* Info.plist */,
-				8E5EB1B020470FD8002EFA44 /* Milionerzy.xcdatamodeld */,
 			);
 			path = Milionerzy;
+			sourceTree = "<group>";
+		};
+		8E5EB1BE20470FE7002EFA44 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8E5EB1AB20470FD8002EFA44 /* GameViewController.swift */,
+				8E034E3E20480539004FBD5F /* MenuViewController.swift */,
+				8E034E4020480AF6004FBD5F /* SettingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E5EB1BF20470FF6002EFA44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8E034E3920474B13004FBD5F /* Custom Cell */,
+				8E5EB1AD20470FD8002EFA44 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8E5EB1C020471007002EFA44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8E034E3520473EA9004FBD5F /* Question.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E5EB1BB20470FD8002EFA44 /* Build configuration list for PBXNativeTarget "Milionerzy" */;
 			buildPhases = (
+				F1072B2B56C2D4136F3F52B8 /* [CP] Check Pods Manifest.lock */,
 				8E5EB1A220470FD8002EFA44 /* Sources */,
 				8E5EB1A320470FD8002EFA44 /* Frameworks */,
 				8E5EB1A420470FD8002EFA44 /* Resources */,
+				CB68FE2403949FDAF9E82103 /* [CP] Embed Pods Frameworks */,
+				73BC1C0800B4C1CDE2E343B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E5EB1B720470FD8002EFA44 /* LaunchScreen.storyboard in Resources */,
+				8E034E3D20474B45004FBD5F /* QuestionCell.xib in Resources */,
 				8E5EB1B420470FD8002EFA44 /* Assets.xcassets in Resources */,
 				8E5EB1AF20470FD8002EFA44 /* Main.storyboard in Resources */,
 			);
@@ -134,14 +206,77 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		73BC1C0800B4C1CDE2E343B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Milionerzy/Pods-Milionerzy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB68FE2403949FDAF9E82103 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Milionerzy/Pods-Milionerzy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Milionerzy/Pods-Milionerzy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1072B2B56C2D4136F3F52B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Milionerzy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8E5EB1A220470FD8002EFA44 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E5EB1B220470FD8002EFA44 /* Milionerzy.xcdatamodeld in Sources */,
-				8E5EB1AC20470FD8002EFA44 /* ViewController.swift in Sources */,
+				8E034E3620473EA9004FBD5F /* Question.swift in Sources */,
+				8E034E3F20480539004FBD5F /* MenuViewController.swift in Sources */,
+				8E034E3C20474B45004FBD5F /* QuestionCell.swift in Sources */,
+				8E5EB1AC20470FD8002EFA44 /* GameViewController.swift in Sources */,
 				8E5EB1AA20470FD8002EFA44 /* AppDelegate.swift in Sources */,
+				8E034E4120480AF6004FBD5F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +411,7 @@
 		};
 		8E5EB1BC20470FD8002EFA44 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01F3A955F14F4CA644D73B79 /* Pods-Milionerzy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +427,7 @@
 		};
 		8E5EB1BD20470FD8002EFA44 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B425BD53A276A948AE5DD6BD /* Pods-Milionerzy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -326,19 +463,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8E5EB1B020470FD8002EFA44 /* Milionerzy.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8E5EB1B120470FD8002EFA44 /* Milionerzy.xcdatamodel */,
-			);
-			currentVersion = 8E5EB1B120470FD8002EFA44 /* Milionerzy.xcdatamodel */;
-			path = Milionerzy.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 8E5EB19E20470FD8002EFA44 /* Project object */;
 }
