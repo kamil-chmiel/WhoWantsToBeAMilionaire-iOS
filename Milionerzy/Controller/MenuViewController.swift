@@ -20,13 +20,13 @@ class MenuViewController: UIViewController {
         performSegue(withIdentifier: "goToGame", sender: nil)
     }
     
-    @IBAction func settingsPressed(_ sender: Any) {
-        performSegue(withIdentifier: "goToSettings", sender: nil)
+    @IBAction func resultsPressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToResults", sender: nil)
     }
     
     
-    @IBAction func creditsPressed(_ sender: Any) {
-        performSegue(withIdentifier: "goToCredits", sender: nil)
+    @IBAction func instructionPressed(_ sender: Any) {
+        performSegue(withIdentifier: "goToInstruction", sender: nil)
     }
     
 }

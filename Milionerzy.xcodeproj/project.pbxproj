@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8E034E3620473EA9004FBD5F /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E034E3520473EA9004FBD5F /* Question.swift */; };
-		8E034E3C20474B45004FBD5F /* QuestionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E034E3A20474B45004FBD5F /* QuestionCell.swift */; };
-		8E034E3D20474B45004FBD5F /* QuestionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E034E3B20474B45004FBD5F /* QuestionCell.xib */; };
 		8E034E3F20480539004FBD5F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E034E3E20480539004FBD5F /* MenuViewController.swift */; };
-		8E034E4120480AF6004FBD5F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E034E4020480AF6004FBD5F /* SettingsViewController.swift */; };
+		8E034E4120480AF6004FBD5F /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E034E4020480AF6004FBD5F /* InstructionViewController.swift */; };
+		8E1F3607204C75F1007168E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8E1F3606204C75F1007168E7 /* GoogleService-Info.plist */; };
+		8E1F3609204DC816007168E7 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1F3608204DC816007168E7 /* ResultsViewController.swift */; };
+		8E1F360B204DC83A007168E7 /* GameOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E1F360A204DC83A007168E7 /* GameOverViewController.swift */; };
 		8E5EB1AA20470FD8002EFA44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5EB1A920470FD8002EFA44 /* AppDelegate.swift */; };
 		8E5EB1AC20470FD8002EFA44 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E5EB1AB20470FD8002EFA44 /* GameViewController.swift */; };
 		8E5EB1AF20470FD8002EFA44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E5EB1AD20470FD8002EFA44 /* Main.storyboard */; };
@@ -24,10 +25,11 @@
 		01F3A955F14F4CA644D73B79 /* Pods-Milionerzy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Milionerzy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Milionerzy/Pods-Milionerzy.debug.xcconfig"; sourceTree = "<group>"; };
 		0EA5A8D38BDA448A695CC883 /* Pods_Milionerzy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Milionerzy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E034E3520473EA9004FBD5F /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		8E034E3A20474B45004FBD5F /* QuestionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionCell.swift; sourceTree = "<group>"; };
-		8E034E3B20474B45004FBD5F /* QuestionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionCell.xib; sourceTree = "<group>"; };
 		8E034E3E20480539004FBD5F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
-		8E034E4020480AF6004FBD5F /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8E034E4020480AF6004FBD5F /* InstructionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
+		8E1F3606204C75F1007168E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8E1F3608204DC816007168E7 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		8E1F360A204DC83A007168E7 /* GameOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverViewController.swift; sourceTree = "<group>"; };
 		8E5EB1A620470FD8002EFA44 /* Milionerzy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Milionerzy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E5EB1A920470FD8002EFA44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E5EB1AB20470FD8002EFA44 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -67,13 +69,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		8E034E3920474B13004FBD5F /* Custom Cell */ = {
+		8E1F3605204C753B007168E7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8E034E3A20474B45004FBD5F /* QuestionCell.swift */,
-				8E034E3B20474B45004FBD5F /* QuestionCell.xib */,
+				8E1F3606204C75F1007168E7 /* GoogleService-Info.plist */,
 			);
-			path = "Custom Cell";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		8E5EB19D20470FD8002EFA44 = {
@@ -98,12 +99,12 @@
 			isa = PBXGroup;
 			children = (
 				8E5EB1A920470FD8002EFA44 /* AppDelegate.swift */,
+				8E5EB1B820470FD8002EFA44 /* Info.plist */,
 				8E5EB1C020471007002EFA44 /* Model */,
 				8E5EB1BF20470FF6002EFA44 /* View */,
 				8E5EB1BE20470FE7002EFA44 /* Controller */,
 				8E5EB1B320470FD8002EFA44 /* Assets.xcassets */,
-				8E5EB1B520470FD8002EFA44 /* LaunchScreen.storyboard */,
-				8E5EB1B820470FD8002EFA44 /* Info.plist */,
+				8E1F3605204C753B007168E7 /* Supporting Files */,
 			);
 			path = Milionerzy;
 			sourceTree = "<group>";
@@ -111,9 +112,11 @@
 		8E5EB1BE20470FE7002EFA44 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8E5EB1AB20470FD8002EFA44 /* GameViewController.swift */,
 				8E034E3E20480539004FBD5F /* MenuViewController.swift */,
-				8E034E4020480AF6004FBD5F /* SettingsViewController.swift */,
+				8E034E4020480AF6004FBD5F /* InstructionViewController.swift */,
+				8E1F3608204DC816007168E7 /* ResultsViewController.swift */,
+				8E5EB1AB20470FD8002EFA44 /* GameViewController.swift */,
+				8E1F360A204DC83A007168E7 /* GameOverViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -121,7 +124,7 @@
 		8E5EB1BF20470FF6002EFA44 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8E034E3920474B13004FBD5F /* Custom Cell */,
+				8E5EB1B520470FD8002EFA44 /* LaunchScreen.storyboard */,
 				8E5EB1AD20470FD8002EFA44 /* Main.storyboard */,
 			);
 			path = View;
@@ -198,9 +201,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E5EB1B720470FD8002EFA44 /* LaunchScreen.storyboard in Resources */,
-				8E034E3D20474B45004FBD5F /* QuestionCell.xib in Resources */,
 				8E5EB1B420470FD8002EFA44 /* Assets.xcassets in Resources */,
 				8E5EB1AF20470FD8002EFA44 /* Main.storyboard in Resources */,
+				8E1F3607204C75F1007168E7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,10 +276,11 @@
 			files = (
 				8E034E3620473EA9004FBD5F /* Question.swift in Sources */,
 				8E034E3F20480539004FBD5F /* MenuViewController.swift in Sources */,
-				8E034E3C20474B45004FBD5F /* QuestionCell.swift in Sources */,
 				8E5EB1AC20470FD8002EFA44 /* GameViewController.swift in Sources */,
 				8E5EB1AA20470FD8002EFA44 /* AppDelegate.swift in Sources */,
-				8E034E4120480AF6004FBD5F /* SettingsViewController.swift in Sources */,
+				8E1F360B204DC83A007168E7 /* GameOverViewController.swift in Sources */,
+				8E034E4120480AF6004FBD5F /* InstructionViewController.swift in Sources */,
+				8E1F3609204DC816007168E7 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
