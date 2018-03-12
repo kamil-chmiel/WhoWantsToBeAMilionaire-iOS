@@ -18,6 +18,7 @@
 		8E5EB1AF20470FD8002EFA44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E5EB1AD20470FD8002EFA44 /* Main.storyboard */; };
 		8E5EB1B420470FD8002EFA44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E5EB1B320470FD8002EFA44 /* Assets.xcassets */; };
 		8E5EB1B720470FD8002EFA44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E5EB1B520470FD8002EFA44 /* LaunchScreen.storyboard */; };
+		8EDB8AEB204DF88E00115FD5 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDB8AEA204DF88E00115FD5 /* Result.swift */; };
 		B07F603F4031422C3B5DA50A /* Pods_Milionerzy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA5A8D38BDA448A695CC883 /* Pods_Milionerzy.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		8E5EB1B320470FD8002EFA44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E5EB1B620470FD8002EFA44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E5EB1B820470FD8002EFA44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EDB8AEA204DF88E00115FD5 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		B425BD53A276A948AE5DD6BD /* Pods-Milionerzy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Milionerzy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Milionerzy/Pods-Milionerzy.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				8E034E3520473EA9004FBD5F /* Question.swift */,
+				8EDB8AEA204DF88E00115FD5 /* Result.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				8E5EB1AA20470FD8002EFA44 /* AppDelegate.swift in Sources */,
 				8E1F360B204DC83A007168E7 /* GameOverViewController.swift in Sources */,
 				8E034E4120480AF6004FBD5F /* InstructionViewController.swift in Sources */,
+				8EDB8AEB204DF88E00115FD5 /* Result.swift in Sources */,
 				8E1F3609204DC816007168E7 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

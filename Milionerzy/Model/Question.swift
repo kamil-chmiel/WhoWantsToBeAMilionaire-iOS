@@ -7,6 +7,7 @@
 //
 
 class Question {
-    var questionBody: String=""
-    var answers: [String]!
+    var questionBody: String?
+    var answers: [String] = []
+    var correctAnswer: String?
 }

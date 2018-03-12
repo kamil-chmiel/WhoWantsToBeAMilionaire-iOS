@@ -62,7 +62,7 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                                 <state key="normal" title="Nowa gra" backgroundImage="Milionerzy_Cell">
-                                                    <color key="titleColor" red="1" green="0.77459364931714081" blue="0.27609839963228144" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleColor" red="1" green="0.84689270983086862" blue="0.31960493309228155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="newGamePressed:" destination="fc7-rK-Li7" eventType="touchUpInside" id="1UB-65-Spg"/>
@@ -242,7 +242,7 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Milionerzy_Cell" translatesAutoresizingMaskIntoConstraints="NO" id="WCt-im-Zdi">
                                         <rect key="frame" x="0.0" y="15" width="375" height="119"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jakie kolory posiada flaga Unii Europejskiej?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e04-FR-JdM">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e04-FR-JdM">
                                         <rect key="frame" x="60" y="22" width="255" height="105"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -266,27 +266,39 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hH-Wk-3B7">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="71"/>
-                                        <state key="normal" title="A: Biały i czerwony" backgroundImage="Milionerzy_Cell">
+                                        <state key="normal" backgroundImage="Milionerzy_Cell">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="QdO-pF-A2f" eventType="touchUpInside" id="3eY-Dt-6db"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXe-fz-aQb">
                                         <rect key="frame" x="0.0" y="71" width="375" height="71"/>
-                                        <state key="normal" title="B: Żółty i niebieski" backgroundImage="Milionerzy_Cell">
+                                        <state key="normal" backgroundImage="Milionerzy_Cell">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="QdO-pF-A2f" eventType="touchUpInside" id="Tru-Sp-XUS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bph-Ox-ZA3">
                                         <rect key="frame" x="0.0" y="142" width="375" height="71"/>
-                                        <state key="normal" title="C: Czerwony i niebieski" backgroundImage="Milionerzy_Cell">
+                                        <state key="normal" backgroundImage="Milionerzy_Cell">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="QdO-pF-A2f" eventType="touchUpInside" id="K80-hW-leR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="get-d3-4Kh">
                                         <rect key="frame" x="0.0" y="213" width="375" height="71"/>
-                                        <state key="normal" title="D: Niebieski i biały" backgroundImage="Milionerzy_Cell">
+                                        <state key="normal" backgroundImage="Milionerzy_Cell">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="answerPressed:" destination="QdO-pF-A2f" eventType="touchUpInside" id="IRX-W2-aAm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -298,7 +310,11 @@
                                 <items>
                                     <barButtonItem title="0zł" id="vnM-y9-s5D"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="ARs-Sz-s8u"/>
-                                    <barButtonItem systemItem="stop" id="91Q-ke-xUl"/>
+                                    <barButtonItem systemItem="stop" id="91Q-ke-xUl">
+                                        <connections>
+                                            <action selector="exitPressed:" destination="QdO-pF-A2f" id="xKD-D8-I8c"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -329,6 +345,7 @@
                         <outlet property="answer2Button" destination="dXe-fz-aQb" id="o2L-Rk-1nu"/>
                         <outlet property="answer3Button" destination="Bph-Ox-ZA3" id="8M6-fB-Ksz"/>
                         <outlet property="answer4Button" destination="get-d3-4Kh" id="G2L-gP-6zN"/>
+                        <outlet property="moneyLabel" destination="vnM-y9-s5D" id="1J7-VE-bQ8"/>
                         <outlet property="questionLabel" destination="e04-FR-JdM" id="Y5N-Oj-YRg"/>
                         <outlet property="secondsLabel" destination="9Q8-r1-lpz" id="Oh4-ei-JJM"/>
                         <segue destination="1XW-zz-CfH" kind="show" identifier="goToGameOver" id="KZN-5M-yrn"/>
@@ -440,10 +457,10 @@
             </objects>
             <point key="canvasLocation" x="2508" y="125"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View View Controller-->
         <scene sceneID="NDl-Mb-JIB">
             <objects>
-                <viewController id="dtR-sk-Xd4" sceneMemberID="viewController">
+                <viewController id="dtR-sk-Xd4" customClass="ResultsViewViewController" customModule="Milionerzy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="afP-aw-vIe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -464,21 +481,12 @@
                                 <rect key="frame" x="0.0" y="93" width="375" height="439"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="03G-tk-xII">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customResultCell" id="03G-tk-xII">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="03G-tk-xII" id="sPo-Fi-uWt">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="1. Kamil - 1 000 000zł" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1JH-8g-r19">
-                                                    <rect key="frame" x="15" y="0.0" width="345" height="33"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -511,6 +519,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="p07-vl-cGJ"/>
                     </view>
+                    <connections>
+                        <outlet property="resultsTable" destination="SHJ-W7-gno" id="Bor-fP-9jZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oVx-yB-awH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

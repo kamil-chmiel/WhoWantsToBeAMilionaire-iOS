@@ -22,10 +22,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LG_full_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Mou-ce-61H" userLabel="Logo">
-                                <rect key="frame" x="112" y="258" width="150" height="150"/>
+                                <rect key="frame" x="87" y="233" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="150" id="JAj-Xp-abQ"/>
-                                    <constraint firstAttribute="width" constant="150" id="NE2-On-Ddm"/>
+                                    <constraint firstAttribute="height" constant="200" id="JAj-Xp-abQ"/>
+                                    <constraint firstAttribute="width" constant="200" id="NE2-On-Ddm"/>
                                 </constraints>
                             </imageView>
                         </subviews>
