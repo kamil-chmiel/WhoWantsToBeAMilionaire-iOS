@@ -59,6 +59,9 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func answerPressed(_ sender: UIButton) {
+        
+        
+        
         questionIndex = questionIndex + 1
         showQuestion(index: questionIndex)
     }

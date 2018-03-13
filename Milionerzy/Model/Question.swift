@@ -10,4 +10,5 @@ class Question {
     var questionBody: String?
     var answers: [String] = []
     var correctAnswer: String?
+    var difficultyLvl: Int?
 }
