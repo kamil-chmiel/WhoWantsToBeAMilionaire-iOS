@@ -29,17 +29,7 @@ class GameOverViewController: UIViewController {
     }
     
     @IBAction func playAgainPressed(_ sender: UIButton) {
-        print(navigationController?.topViewController)
         navigationController?.popViewController(animated: true)
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        let navVC = segue.destination as? UINavigationController
-        
-        let gameVC = navVC?.viewControllers.first as! GameViewController
-        print(navVC?.viewControllers.first)
-        gameVC.runTimer()
-    }
-    
+   
 }

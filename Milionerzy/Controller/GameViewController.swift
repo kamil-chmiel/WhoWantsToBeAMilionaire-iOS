@@ -22,13 +22,21 @@ class GameViewController: UIViewController {
     
     var questions: [Question] = []
     var questionIndex: Int = 0
+    var answers: [UIButton] = []
     var prizes: [Int] = [500,1000,2000,5000,10000,20000,40000,75000,125000,250000,500000,1000000]
     var currentPrize = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        runTimer()
         showQuestion(index: questionIndex)
+        answers.append(answer1Button)
+        answers.append(answer2Button)
+        answers.append(answer3Button)
+        answers.append(answer4Button)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        runTimer()
     }
 
     
@@ -71,8 +79,10 @@ class GameViewController: UIViewController {
             moneyLabel.title = "\(currentPrize)zł"
             questionIndex = questionIndex + 1
             showQuestion(index: questionIndex)
+            for answer in answers {
+                answer.isEnabled = true
+            }
             seconds = 60
-            print("Dobrzeee")
         }
         else {
             performSegue(withIdentifier: "goToGameOver", sender: nil)
@@ -92,8 +102,32 @@ class GameViewController: UIViewController {
         
         if segue.identifier == "goToGameOver" {
             timer.invalidate()
+            seconds=60
         }
     }
     
+    
+    @IBAction func fiftyPressed(_ sender: UIButton) {
+        
+        let ansTranslate = [ "A" : 1, "B" : 2, "C" : 3, "D" : 4 ]
+        let correct = questions[questionIndex].correctAnswer
+        
+        var notCorrect: [Int] = []
+        print("Correct: \(ansTranslate[correct!])")
+        for i in 0...3 {
+            if i != (ansTranslate[correct!]!-1) {
+                notCorrect.append(i)
+            print("Odrzucamy: \(i)")
+            }
+        }
+        let indexToDisable = Int(arc4random_uniform(2))
+        print("Indext: \(indexToDisable)")
+        answers[notCorrect[indexToDisable]].setTitle("", for: UIControlState.normal)
+        answers[notCorrect[indexToDisable]].isEnabled = false
+        answers[notCorrect[indexToDisable]+1].setTitle("", for: UIControlState.normal)
+        answers[notCorrect[indexToDisable]+1].isEnabled = false
+        
+        sender.isEnabled = false
+    }
 }
 

@@ -213,6 +213,9 @@
                                                 <integer key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="fiftyPressed:" destination="QdO-pF-A2f" eventType="touchUpInside" id="BDJ-yr-0lw"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MZl-ip-66x">
                                         <rect key="frame" x="266.5" y="0.0" width="88.5" height="60"/>
