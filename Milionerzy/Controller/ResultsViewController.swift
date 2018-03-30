@@ -36,4 +36,9 @@ class ResultsViewViewController: UIViewController, UITableViewDelegate, UITableV
         return resultsArray.count
     }
     
+    @IBAction func backToMenuPressed(_ sender: UIButton) {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
+    
 }

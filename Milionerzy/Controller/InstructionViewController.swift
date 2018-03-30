@@ -19,7 +19,7 @@ class InstructionViewController: UIViewController {
     }
 
     @IBAction func acceptPressed(_ sender: UIButton) {
-        _ = navigationController?.popViewController(animated: false)
+        _ = navigationController?.popViewController(animated: true)
 
     }
     

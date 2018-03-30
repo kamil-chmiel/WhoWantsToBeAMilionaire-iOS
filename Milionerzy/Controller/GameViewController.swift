@@ -22,6 +22,8 @@ class GameViewController: UIViewController {
     
     var questions: [Question] = []
     var questionIndex: Int = 0
+    var prizes: [Int] = [500,1000,2000,5000,10000,20000,40000,75000,125000,250000,500000,1000000]
+    var currentPrize = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,13 +42,14 @@ class GameViewController: UIViewController {
     }
     
     func runTimer() {
-         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(GameViewController.updateTimer)), userInfo: nil, repeats: true)
+        seconds = 60
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(GameViewController.updateTimer)), userInfo: nil, repeats: true)
     }
     
     @objc func updateTimer() {
-        if seconds < 0 {
+        if seconds == 0 {
             timer.invalidate()
-            print("Time's up!")
+            performSegue(withIdentifier: "goToGameOver", sender: nil)
         }
         else {
             seconds -= 1
@@ -60,12 +63,37 @@ class GameViewController: UIViewController {
     
     @IBAction func answerPressed(_ sender: UIButton) {
         
+        let ansTranslate = [ "A" : 1, "B" : 2, "C" : 3, "D" : 4 ]
+        let correct = questions[questionIndex].correctAnswer // B
+    
+        if sender.tag == ansTranslate[correct!] {
+            currentPrize = prizes[questionIndex]
+            moneyLabel.title = "\(currentPrize)zł"
+            questionIndex = questionIndex + 1
+            showQuestion(index: questionIndex)
+            seconds = 60
+            print("Dobrzeee")
+        }
+        else {
+            performSegue(withIdentifier: "goToGameOver", sender: nil)
+        }
         
-        
-        questionIndex = questionIndex + 1
-        showQuestion(index: questionIndex)
     }
     
+    func animateCell() {
+        var images: [UIImage] = []
+        images.append(UIImage(named: "Check_Cell.png")!)
+        images.append(UIImage(named: "Milionerzy_cell.png")!)
+        
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goToGameOver" {
+            timer.invalidate()
+        }
+    }
     
 }
 
